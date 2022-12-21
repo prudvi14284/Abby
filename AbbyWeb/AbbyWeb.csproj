@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Shared\_Notification.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Categories\Index.cshtml~RF1a2e9ee9.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
@@ -18,6 +26,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Shared\_Notification.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Shared\_Notification.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Shared\_Notification.cshtml" />
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,7 @@ namespace AbbyWeb.Data
         {
 
         }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Category { get; set; }
+        
     }
 }

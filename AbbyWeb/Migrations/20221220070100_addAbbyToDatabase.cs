@@ -5,13 +5,13 @@
 namespace AbbyWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class addCategoryToDatabase : Migration
+    public partial class addAbbyToDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Categories",
+                name: "Category",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,7 @@ namespace AbbyWeb.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categories", x => x.Id);
+                    table.PrimaryKey("PK_Category", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace AbbyWeb.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Category");
         }
     }
 }
